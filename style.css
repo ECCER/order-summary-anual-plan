@@ -1,0 +1,113 @@
+:root {
+    --pale-blue : hsl(225, 100%, 94%);
+    --bright-blue : hsl(245, 75%, 52%);
+    --very-pale-blue : hsl(225, 100%, 98%);
+    --desaturated-blue : hsl(224, 23%, 55%);
+    --dark-blue : hsl(223, 47%, 23%);
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    color: var(--desaturated-blue);
+    /* background-image: url(images/pattern-background-mobile.svg); */
+    background-color: var(--pale-blue);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    width: 86.5%;
+    margin: auto;
+    /* padding: 1rem; */
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.musicgirl {
+    height: 9.9rem;
+}
+
+.musicgirl img {
+    width: 100%;
+}
+
+.content {
+    background-color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h1 {
+    color: var(--dark-blue);
+    font-weight: 900;
+    font-size: 23px;
+    margin-bottom: 1rem;
+    /* padding: 1.5rem 0; */
+}
+
+.details {
+    background-color: var(--very-pale-blue);
+    border-radius: .6rem;
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.icon-detail {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.price {
+    margin-left: 1rem;
+}
+
+h2 {
+    color: var(--dark-blue);
+    font-weight: 700;
+    font-size: 15px;
+}
+
+a {
+    color: var(--bright-blue);
+    font-weight: 700;
+    font-size: 13px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    border-style: none;
+    background-color: var(--bright-blue);
+    border-radius: 0.7rem;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+    box-shadow: 0px 10px 10px 10px var(--pale-blue);
+    cursor: pointer;
+}
+
+button:last-child {
+    color: var(--desaturated-blue);
+    background-color: unset;
+    box-shadow: unset;
+}
